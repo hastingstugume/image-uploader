@@ -1,10 +1,13 @@
 import "./App.css";
+import DragArea from "./DragArea";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <>
+      <div className="container">
+        <DragArea />
+      </div>
+    </>
   );
 }
 
