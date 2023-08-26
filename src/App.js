@@ -2,13 +2,7 @@ import "./App.css";
 import DragArea from "./DragArea";
 
 function App() {
-  return (
-    <>
-      <div className="container">
-        <DragArea />
-      </div>
-    </>
-  );
+  return <DragArea />;
 }
 
 export default App;

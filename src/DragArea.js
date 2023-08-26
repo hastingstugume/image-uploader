@@ -18,10 +18,13 @@ const DragArea = () => {
   };
 
   return (
-    <>
-      <header className="App-header">Upload your image</header>
+    <div className="container">
+      <div className="header">
+        <header className="App-header">Upload your image</header>
+        <p id="file-type">File should be Jpeg, Png...</p>
+      </div>
       <div className="drag-area" onDragOver={onDragOver} onDrop={onDrop}>
-        <div className="image">
+        <div id="image">
           <img
             src={files ? URL.createObjectURL(files[0]) : image}
             alt="Drag"
@@ -29,7 +32,7 @@ const DragArea = () => {
             width="150px"
           />
         </div>
-        <div className="center">
+        <div id="center">
           <p>Drag & Drop your image here</p>
         </div>
       </div>
@@ -44,17 +47,17 @@ const DragArea = () => {
           hidden
         />
       </div>
-
+      <p id="or">or</p>
       <div className="file-upload">
         <button
           onClick={() => {
             fileInput.current.click();
           }}
         >
-          Choose File
+          Choose a file
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

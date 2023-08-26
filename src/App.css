@@ -5,27 +5,31 @@ body {
   color: #f7542e;
 }
 
+.header {
+  margin-top: 20px;
+  min-height: 100px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 30%;
   height: 600px;
   align-items: center;
-  justify-content: center;
   box-shadow: 0 0 5px #ffdfdf;
   border-radius: 12px;
   overflow: hidden;
   margin-top: 200px;
   margin-left: 519.82px;
+  margin-bottom: 100px;
 }
 
 .drag-area {
-  height: 500px;
+  height: 300px;
   width: 80%;
   border-radius: 12px;
   border: 2px dashed #97bef4;
   background-color: #f4f3f9;
-  justify-content: center;
   user-select: none;
   -webkit-user-select: none;
   padding: 10px;
@@ -33,27 +37,51 @@ body {
   text-align: center;
 }
 img {
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
-div.center p {
-  line-height: 1.5;
-  display: inline-block;
-  vertical-align: bottom;
+#image {
+  display: flex;
+  margin-top: 30px;
 }
+#center {
+  display: block;
+  margin-left: auto;
+  margin-top: 60px;
+}
+
 .App-header {
   text-align: center !important ;
   margin: 20px;
+  font-size: 18px;
 }
 .file-upload {
-  margin-top: 10%;
+  margin-top: 0;
   display: block;
 }
 .file-upload button {
+  width: 101px;
+  margin-top: 0;
+  margin-bottom: 50px;
   padding: 10px;
   border: #2f80ed;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: #2f80ed;
   color: #ffffff;
+}
+.container p {
+  color: #bdbdbd;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#center p {
+  color: #bdbdbd;
+  margin-bottom: 40px;
+}
+#file-type {
+  font-size: 10px;
+  color: #828282;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
